@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    #container {
+  width: 980px;
+  margin: 0 auto;
+}
+      header {
+        background-color: #008B8B;
+
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+
+      }
+      nav {
+         	background-color: #2F4F4F;
+        overflow: hidden;/*to display full width nav bar*/
+        margin:0px 0px 5px 0px;
+
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+      }
+      nav ul li {
+        float: left;
+        	background-color: #2F4F4F;
+      }
+      nav a {
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 24px;
+        color: white;
+        display: block;
+        line-height: 20px;
+
+      }
+      nav a:hover {
+          background-color:#1bc2a2;
+      }
+      nav ul ul {
+        display: none;
+      }
+      nav ul li:hover >ul {
+        display: block;
+        position: absolute;
+
+      }
+      nav ul ul li {
+        float: none;/*to show sub mrnu vertically*/
+        position:relative;/*to show sub menu */
+      }
+      nav ul ul ul {
+        position: absolute;
+        top:0;
+        left:100%;
+        background-color: red;
+      }
+      .aside {
+        background-color: #5F9EA0;
+        text-align: center;
+        width: 250px;
+        float: left;
+        height: 400px;
+        color: white;
+        margin-bottom:5px;
+         padding:10px;
+
+      }
+      .article {
+        background-color: #5F9EA0;
+        text-align: center;
+        width: 685px;
+        float: right;
+        height: 400px;
+        color: white;
+        margin-bottom:5px;
+        padding:10px;
+      }
+      footer {
+        background-color: #008B8B;
+        margin: 5px 0px 5px 0px;
+        padding: 20px;
+        clear:both;
+        text-align: center;
+        color: white;
+      }
+      img {
+max-width:100%;
+margin:0 auto;
+display:block;
+
+
+}
+
+    </style>
+  </head>
+  <body id="container">
+    <header>
+      <img src="image/love.png" alt="" />
+    </header>
+    <nav>
+      <ul>
+        <li style="background-color:#696969;"><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Features</a>
+         <ul>
+
+           </li>
+           <li><a href="#">Poem</a></li>
+           <li><a href="#">Fashion</a></li>
+           <li><a href="#">Songs</a>
+             <ul>
+               <li><a href="#">Bangla</a></li>
+               <li><a href="#">English</a></li>
+               <li><a href="#">Hindi</a></li>
+             </ul>
+         </ul>
+        </li>
+        <li style="float:right"><a href="#">Sign Up</a></li>
+        <li style="float:right"><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+    <aside class="aside">
+<h1>About Me</h1>
+Hello..........I am Anwar muhammad, from Sandvip.
+<img src="image/anwar.JPG" alt="" />
+    </aside>
+    <section>
+      <article class="article">
+         <h2>Love is Divine</h2>
+         <img src="image/love2.PNG" alt="" />
+      </article>
+    </section>
+    <footer >
+           &copy Anwar Muhammad 2015
+    </footer>
+  </body>
+</html>
